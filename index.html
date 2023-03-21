@@ -5,40 +5,40 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <title>Hotel Snatcher</title>
 </head>
 <body>
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown link
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
+  <header >
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid nav-container">
+        <a class="navbar-brand logo" href="#">HotelSnatcher</a>
+          <div class="menu-home">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse nav-links" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img class="flag" src="/images/sa-flag.png" alt="Choose your currency">
+                  </a>
+                  <ul class="dropdown-menu countries" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item country" href="#"><span ><img class="flag" src="/images/usa-flag.png" alt="American flag"></span>USD</a></li>
+                    <li><a class="dropdown-item country" href="#"><span ><img class="flag" src="/images/sa-flag.png" alt="South African flag"></span>ZAR</a></li>
+                    <li><a class="dropdown-item country" href="#"><span ><img class="flag" src="/images/uk-flag.png" alt="British flag"></span>GBP</a></li>
+                    <li><a class="dropdown-item country" href="#"><span ><img class="flag" src="/images/eu-flag.png" alt="European union flag"></span>EUR</a></li>
+                  </ul>
+                </li>
               </ul>
-            </li>
-          </ul>
+            </div>
+            <div class="nav-item">
+              <a class="nav-link active" id="home-link" aria-current="page" href="#">Home</a>
+            </div>
+          </div>
         </div>
       </div>
     </nav>
