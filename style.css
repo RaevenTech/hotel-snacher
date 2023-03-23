@@ -70,14 +70,14 @@ body {
   color: whitesmoke;
 }
 
-/*-- search section --*/
+/*--/------------ search section ---------------------*/
 
 .search-container {
   background-color: #252525;
-  width: 90%;
-  margin: 50px auto;
+  max-width: 80%;
+  margin: 60px auto;
   border: 1px solid #a3a3a3;
-  padding: 40px;
+  padding: 60px;
   border-radius: 10px;
 }
 
@@ -85,7 +85,7 @@ body {
   color: whitesmoke;
   font-size: 24px;
   margin-bottom: 20px;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .location-date {
@@ -204,29 +204,42 @@ body {
 
 /*------------- Popular destinations Section  -----------*/
 .popular-section {
+  padding: 30px 0px;
   background-color: #252525;
+}
+
+.popular-container {
+  max-width: 90%;
+  margin: 0px auto;
 }
 
 .section-title {
   color: whitesmoke;
   font-size: 24px;
   margin-bottom: 20px;
-  font-weight: 500
+  font-weight: 500;
+  margin-left: 65px;
 }
 
 .popular-destinations {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   width: 90%;
   margin: 0pc auto;
-  gap: 15px;
+  gap: 40px;
 }
 
 .popular-destinations-card {
   padding-top: 10px;
-  border-radius: 10px 10px 0px 0px;
+  border-radius: 10px;
+  overflow: hidden;
   background-color: whitesmoke;
+  width: 800px;
+}
+
+.popular-destinations-card:hover {
+  box-shadow: 0px 0px 5px 3px steelblue;
 }
 
 .popular-destinations-card-title {
@@ -236,5 +249,69 @@ body {
 }
 
 .destination-card-img {
-  width: 300px;
+  width: 400px;
+}
+
+.destination-card-img:hover {
+  transform: scale(1.1);
+  transition: ease-in 0.3s;
+  cursor: pointer;
+}
+
+/*------------- About Us Section  -----------*/
+.about-us {
+  background-color: whitesmoke;
+  padding: 60px 0px;
+}
+
+.about-us-txt {
+  padding: 40px;
+  width: fit-content;
+  margin: 0px auto;
+  color: whitesmoke;
+  background-color: #252525;
+  border-radius: 10px;
+}
+
+/*------------- Footer Section  -----------*/
+.footer-container {
+  background-color: #252525;
+  padding: 20px 0px;
+}
+
+.footer {
+  background-color: #252525;
+  color: #737373;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-us-btn {
+  color: #737373;
+  background: transparent;
+  border: none;
+  text-decoration: underline;
+}
+
+.help {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  border-bottom: 1px solid #a3a3a363;
+  padding-bottom: 20px;
+}
+
+.socials {
+  font-size: 24px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.copyright {
+  padding-top: 20px;
+  text-align: center;
+  color: #73737371;
+  margin-bottom: 0px;
 }
