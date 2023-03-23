@@ -55,7 +55,7 @@ body {
   color: whitesmoke;
 }
 
-/*-- navbar / drop down --*/
+/*-------------------- navbar / drop down ------------------------------*/
 
 .countries {
   text-align: center;
@@ -172,13 +172,69 @@ body {
   width: 30px;
   height: 100%;
   border: none;
+  font-size: 20px;
   background-color: #73737373;
 }
 
 .room-count {
   margin: 0px 30px;
+  font-size: 20px;
+  font-weight: 500;
 }
 
 .room-selector-label {
   margin: 0px 10px;
+}
+
+.search-btn-section {
+  text-align: center;
+}
+
+.search-btn {
+  background-color: steelblue;
+  padding: 5px 30px;
+  width: 120px;
+  border-radius: 10px;
+  border: none;
+}
+
+.search-btn:hover {
+  background-color: skyblue;
+}
+
+/*------------- Popular destinations Section  -----------*/
+.popular-section {
+  background-color: #252525;
+}
+
+.section-title {
+  color: whitesmoke;
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: 500
+}
+
+.popular-destinations {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  margin: 0pc auto;
+  gap: 15px;
+}
+
+.popular-destinations-card {
+  padding-top: 10px;
+  border-radius: 10px 10px 0px 0px;
+  background-color: whitesmoke;
+}
+
+.popular-destinations-card-title {
+  font-size: 14px;
+  font-weight: 700;
+  margin-left: 5px;
+}
+
+.destination-card-img {
+  width: 300px;
 }
