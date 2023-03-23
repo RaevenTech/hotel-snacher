@@ -91,11 +91,13 @@ body {
 .location-date {
   display: flex;
   align-items: center;
-  gap: 80px;
+  justify-content: space-between;
+
 }
 
 .search-input,
-.child-selector {
+.child-selector,
+.adult-selector {
   color: #737373;
   height: 40px;
   padding: 5px 10px;
@@ -103,11 +105,6 @@ body {
   border: 1px solid #737373;
   gap: 20px;
   cursor: pointer;
-}
-
-.date-selector {
-  display: flex;
-  gap: 10px;
 }
 
 .location-input {
@@ -118,24 +115,36 @@ body {
 .check-in-selector,
 .check-out-selector {
   color: #737373;
+  display: flex;
+  flex-direction: column;
+}
+
+.date-selector {
+  display: flex;
+  gap: 10px;
 }
 
 .child-room-selectors {
   display: flex;
   padding: 20px 0px;
-  justify-content: space-between;
-  align-items: center;
+}
+
+.child-selector,
+.adult-selector {
+  width: 100px;
 }
 
 .child-age-selectors {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+}
+
+.child-age-selector {
   margin-left: 20px;
 }
 
-.child-selector {
-  width: 100px;
+.form-check-input {
+  cursor: pointer;
 }
 
 .child-age {
@@ -143,10 +152,33 @@ body {
   margin-right: 20px;
 }
 
-.smoking-label {
-  color: #737373;
+.adult {
+  margin-left: auto;
 }
 
-.form-check-input {
-  margin-left: 20px;
+.rooms-count-selector {
+  margin-left: auto;
+  color: #737373;
+  margin-right: 0px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background-color: whitesmoke;
+  border-radius: 10px;
+}
+
+.count-btn {
+  cursor: pointer;
+  width: 30px;
+  height: 100%;
+  border: none;
+  background-color: #73737373;
+}
+
+.room-count {
+  margin: 0px 30px;
+}
+
+.room-selector-label {
+  margin: 0px 10px;
 }
