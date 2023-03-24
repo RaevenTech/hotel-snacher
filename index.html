@@ -114,10 +114,10 @@
           </div> 
           <!---- room selector  ---->
           <div class="rooms-count-selector">
-            <label class="room-selector-label">Rooms</label>
+            <label class="room-selector-label">Room</label>
             <button class="count-btn" id="increment" >+</button>
             <span class="room-count" id="room-count">0</span>
-            <button class="count-btn" id="increment">-</button>
+            <button class="count-btn" id="decrement" disabled>-</button>
           </div>
         </div>
         <div class="search-btn-section">
@@ -133,15 +133,15 @@
         <section class="popular-destinations">
           <div class="popular-destinations-card">
             <h5 class="popular-destinations-card-title">London, UK</h5>
-            <img  class="popular-destinations-image destination-card-img" src="images/london.jpg" alt="View over London with the river Thames and London bridge">
+            <a href="#"><img  class="popular-destinations-image destination-card-img" src="images/london.jpg" alt="View over London with the river Thames and London bridge"></a>
           </div>
           <div class="popular-destinations-card">
             <h5 class="popular-destinations-card-title">Paris, France</h5>
-            <img  class="popular-destinations-image destination-card-img" src="images/paris.jpg" alt="View over Paris and the Eiffel Tower ">
+            <a href="#"></a><img  class="popular-destinations-image destination-card-img" src="images/paris.jpg" alt="View over Paris and the Eiffel Tower "></a>
           </div>
           <div class="popular-destinations-card">
             <h5 class="popular-destinations-card-title">Rome, Metropolitan City of Rome, Italy</h5>
-            <img  class="popular-destinations-image destination-card-img" src="images/rome.jpg" alt="View of the Colosseum ">
+            <a href="#"></a><img  class="popular-destinations-image destination-card-img" src="images/rome.jpg" alt="View of the Colosseum "></a>
           </div>
         </section>
       </div>
@@ -166,7 +166,9 @@
     <footer class="footer-container">
     <div class="footer">
       <div class="help">
-        <button class="contact-us-btn" id="contact-btn">Contact Us</button>
+        <button type="button" class="btn btn-secondary contact-us-btn" id="contact-btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+          Contact Us
+        </button>
         <i class="fa-brands fa-square-facebook socials" id="facebook-icon"></i>
         <i class="fa-brands fa-square-instagram socials" id="intagram-icon"></i>
         <i class="fa-brands fa-square-twitter socials" id="twitter-icon"></i>
@@ -174,6 +176,23 @@
     </div>
     <p class="copyright">Copyright © 2023 All Rights Reserved by <a href="#" id="whiteLableTravel-link">WhiteLabelTravel</a></p>
   </footer>
+  <!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel modal-title">Contact Us</h5>
+      </div>
+      <div class="modal-body">
+        <p class="contacts-info"><span class="contacts">Email:</span> support@ahitelabetravel.co.za</p>
+        <p class="contacts-info"><span class="contacts">Phone:</span> 087 11 2233 22 11</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
   </main> 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

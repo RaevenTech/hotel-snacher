@@ -2,11 +2,17 @@
 font-family: 'Montserrat', sans-serif;
 font-family: 'Roboto', sans-serif;
 */
+html {
+  background-image: url(images/paris-streets.jpg);
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   margin: 0px;
   font-weight: 300;
   color: #252525;
+  z-index: 5;
+  opacity: 0.95;
 }
 
 /*-- header / navbar --*/
@@ -68,7 +74,8 @@ body {
 /*--/------------ search section ---------------------*/
 
 .search-container {
-  background-color: #252525;
+  background: #252525;
+  ;
   max-width: 80%;
   margin: 60px auto;
   border: 1px solid #a3a3a3;
@@ -181,6 +188,7 @@ body {
   margin: 0px 30px;
   font-size: 20px;
   font-weight: 500;
+  color: #252525;
 }
 
 .room-selector-label {
@@ -274,7 +282,7 @@ body {
   border-radius: 10px;
 }
 
-/*------------- Footer Section  -----------*/
+/*------------------------- Footer Section  ------------------------------*/
 .footer-container {
   background-color: #252525;
   padding: 20px 0px;
@@ -334,4 +342,33 @@ body {
 
 #whiteLableTravel-link:hover {
   color: steelblue;
+}
+
+/*------------------------- Modal Section  ------------------------------*/
+
+
+.modal-content {
+  border: 3px solid steelblue;
+}
+
+.modal-header {
+  background-color: #252525;
+  color: #737373;
+}
+
+.modal-footer {
+  background-color: #252525;
+  color: #737373;
+}
+
+.contacts {
+  font-weight: 700;
+}
+
+.contacts-info {
+  font-weight: 500;
+}
+
+.modal-body p {
+  padding-left: 20px;
 }
