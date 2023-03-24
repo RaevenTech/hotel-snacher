@@ -32,13 +32,8 @@ body {
   color: #7e7e7e;
 }
 
-.nav-link:hover,
-:active {
-  color: whitesmoke;
-}
-
-.nav-link:active {
-  color: white;
+.nav-link:hover {
+  color: steelblue;
 }
 
 .menu-home {
@@ -176,6 +171,12 @@ body {
   background-color: #73737373;
 }
 
+.count-btn:hover {
+  font-size: 25px;
+  transition: ease-in-out 0.2s;
+  background-color: steelblue;
+}
+
 .room-count {
   margin: 0px 30px;
   font-size: 20px;
@@ -309,9 +310,28 @@ body {
   cursor: pointer;
 }
 
+.socials:hover {
+  color: steelblue;
+  transform: scale(1.2);
+}
+
 .copyright {
   padding-top: 20px;
   text-align: center;
   color: #73737371;
   margin-bottom: 0px;
+}
+
+#contact-btn:hover {
+  color: steelblue;
+  text-decoration: overline;
+  z-index: 1;
+}
+
+#whiteLableTravel-link {
+  color: inherit;
+}
+
+#whiteLableTravel-link:hover {
+  color: steelblue;
 }
