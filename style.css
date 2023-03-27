@@ -2,9 +2,7 @@
 font-family: 'Montserrat', sans-serif;
 font-family: 'Roboto', sans-serif;
 */
-html {
-  background-image: url(images/paris-streets.jpg);
-}
+
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -12,10 +10,14 @@ body {
   font-weight: 300;
   color: #252525;
   z-index: 5;
-  opacity: 0.95;
+
 }
 
 /*-- header / navbar --*/
+
+.navbar {
+  box-shadow: 0px 0px 10px 2px #a3a3a3;
+}
 
 .nav-container {
   width: 80%;
@@ -47,13 +49,14 @@ body {
 }
 
 .dropdown-menu {
-  background-color: #d6d6d6;
+  background-color: whitesmoke;
   padding: 2px 0px;
 }
 
 .dropdown-item:hover {
-  background-color: #737373;
+  background-color: #d6d6d6;
   color: whitesmoke;
+  text-shadow: 1px 1px 2px #424242;
 }
 
 /*-------------------- navbar / drop down ------------------------------*/
@@ -74,20 +77,21 @@ body {
 /*--/------------ search section ---------------------*/
 
 .search-container {
-  background: #252525;
-  ;
+  background: whitesmoke;
+  box-shadow: 3px 2px 5px 3px #a3a3a3;
   max-width: 80%;
   margin: 60px auto;
-  border: 1px solid #a3a3a3;
+
   padding: 60px;
   border-radius: 10px;
 }
 
 .search-title {
-  color: whitesmoke;
+  color: #737373;
   font-size: 24px;
   margin-bottom: 20px;
   font-weight: 400;
+
 }
 
 .location-date {
@@ -107,6 +111,7 @@ body {
   border: 1px solid #737373;
   gap: 20px;
   cursor: pointer;
+  box-shadow: inset 1px 1px 5px 1px #a3a3a3;
 }
 
 .location-input {
@@ -167,6 +172,7 @@ body {
   overflow: hidden;
   background-color: whitesmoke;
   border-radius: 10px;
+  box-shadow: inset 1px 1px 5px 1px #a3a3a3;
 }
 
 .count-btn {
@@ -205,16 +211,18 @@ body {
   width: 120px;
   border-radius: 10px;
   border: none;
+  box-shadow: 1px 1px 2px 2px #3a3a3a
 }
 
 .search-btn:hover {
   background-color: skyblue;
+  box-shadow: inset 1px 2px 3px 2px #3a3a3a
 }
 
 /*------------- Popular destinations Section  -----------*/
 .popular-section {
   padding: 30px 0px;
-  background-color: #252525;
+
 }
 
 .popular-container {
@@ -223,7 +231,7 @@ body {
 }
 
 .section-title {
-  color: whitesmoke;
+  color: #737373;
   font-size: 24px;
   margin-bottom: 20px;
   font-weight: 500;
@@ -245,10 +253,16 @@ body {
   overflow: hidden;
   background-color: whitesmoke;
   width: 800px;
+  box-shadow: 3px 3px 6px 3px #3a3a3a
 }
 
 .popular-destinations-card:hover {
-  box-shadow: 0px 0px 5px 3px steelblue;
+  transform: scale(1.1);
+  transition: ease-in 0.3s;
+  cursor: pointer;
+  border: 5px solid steelblue;
+  box-shadow: none;
+  z-index: 2;
 }
 
 .popular-destinations-card-title {
@@ -259,12 +273,6 @@ body {
 
 .destination-card-img {
   width: 400px;
-}
-
-.destination-card-img:hover {
-  transform: scale(1.1);
-  transition: ease-in 0.3s;
-  cursor: pointer;
 }
 
 /*------------- About Us Section  -----------*/
