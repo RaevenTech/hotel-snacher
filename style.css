@@ -30,6 +30,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-size: 25px;
   font-weight: 200;
+
 }
 
 .nav-links {
@@ -245,6 +246,7 @@ body {
   width: 90%;
   margin: 0pc auto;
   gap: 40px;
+
 }
 
 .popular-destinations-card {
@@ -253,7 +255,7 @@ body {
   overflow: hidden;
   background-color: whitesmoke;
   width: 800px;
-  box-shadow: 3px 3px 6px 3px #3a3a3a
+  box-shadow: 3px 3px 6px 3px #737373;
 }
 
 .popular-destinations-card:hover {
@@ -262,10 +264,11 @@ body {
   cursor: pointer;
   border: 5px solid steelblue;
   box-shadow: none;
-  z-index: 2;
+
 }
 
 .popular-destinations-card-title {
+  color: #737373;
   font-size: 14px;
   font-weight: 700;
   margin-left: 5px;
@@ -277,27 +280,28 @@ body {
 
 /*------------- About Us Section  -----------*/
 .about-us {
-  background-color: whitesmoke;
   padding: 60px 0px;
 }
 
 .about-us-txt {
   padding: 40px;
   width: fit-content;
-  margin: 0px auto;
-  color: whitesmoke;
-  background-color: #252525;
+  margin: 40px auto;
+  color: #737373;
+  background-color: whitesmoke;
   border-radius: 10px;
+  box-shadow: 3px 3px 6px 3px #737373;
 }
 
 /*------------------------- Footer Section  ------------------------------*/
 .footer-container {
-  background-color: #252525;
+  background-color: whitesmoke;
   padding: 20px 0px;
+  box-shadow: 3px 3px 6px 3px #737373;
 }
 
 .footer {
-  background-color: #252525;
+  background-color: whitesmoke;
   color: #737373;
   display: flex;
   align-items: center;
@@ -316,7 +320,7 @@ body {
   align-items: center;
   justify-content: center;
   width: 80%;
-  border-bottom: 1px solid #a3a3a363;
+  border-bottom: 1px solid #73737344;
   padding-bottom: 20px;
 }
 
@@ -332,20 +336,22 @@ body {
 }
 
 .copyright {
-  padding-top: 20px;
+  padding-top: 10px;
   text-align: center;
-  color: #73737371;
+  color: #7e7e7e;
   margin-bottom: 0px;
+  font-size: 12px;
 }
 
 #contact-btn:hover {
   color: steelblue;
   text-decoration: overline;
-  z-index: 1;
+  background: transparent;
 }
 
 #whiteLableTravel-link {
-  color: inherit;
+  color: #666666;
+  font-size: 14px;
 }
 
 #whiteLableTravel-link:hover {
