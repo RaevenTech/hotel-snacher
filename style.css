@@ -212,12 +212,12 @@ body {
   width: 120px;
   border-radius: 10px;
   border: none;
-  box-shadow: 1px 1px 2px 2px #3a3a3a
+  box-shadow: 1px 1px 2px 2px #737373;
 }
 
 .search-btn:hover {
   background-color: skyblue;
-  box-shadow: inset 1px 2px 3px 2px #3a3a3a
+  box-shadow: inset 1px 2px 3px 2px #737373;
 }
 
 /*------------- Popular destinations Section  -----------*/
