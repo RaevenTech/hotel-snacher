@@ -349,6 +349,13 @@ body {
   background: transparent;
 }
 
+#contact-btn:focus {
+  color: steelblue;
+  text-decoration: overline;
+  background: transparent;
+  border: none;
+}
+
 #whiteLableTravel-link {
   color: #666666;
   font-size: 14px;
